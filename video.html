@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>测试视频全屏播放</title>
+</head>
+<body style=" width:100%; height:100%;" onresize="resizeBody()">
+<video width="658" height="444" src="http://samanew.oss-cn-beijing.aliyuncs.com/%E6%B8%B8%E6%88%8F%E6%8E%A8%E8%8D%90/2017.11.29/%E6%AD%BB%E7%A5%9E%E6%9D%A5%E4%BA%86%232%EF%BC%81%E5%8D%9A%E7%89%A9%E9%A6%86%E9%BB%84%E7%89%87%E6%9D%80%E4%BA%BA%E4%BA%8B%E4%BB%B6%EF%BC%81%20-%201.1%28Av16628595%2CP1%29.mp4" autoplay="autoplay"></video>
+</body>
+<script type="text/javascript">
+    function resizeBody() {
+        var bodyHeight = document.documentElement.clientHeight;
+        $("#Flash1").height(bodyHeight + "px");
+        $("body").height(bodyHeight + "px");
+    }
+    $(function () {
+        resizeBody();
+    });
+</script>
+</html>
