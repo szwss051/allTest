@@ -6,6 +6,18 @@
     <title>测试视频全屏播放</title>
     <script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js"></script>
 </head>
+<style>
+    video::-webkit-media-controls-fullscreen-button {
+        display: none;
+    }
+
+    video::-webkit-media-controls-enclosure {
+        overflow:hidden;
+    }
+    video::-webkit-media-controls-panel {
+        width: calc(100% + 30px);
+    }
+</style>
 <body  >
 <video width="100%" height="100%"
         controls="controls"
